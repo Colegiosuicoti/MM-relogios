@@ -45,9 +45,9 @@ describe("Vendors", function () {
 				urlVendor = "http://localhost:8080/" + vendors[vendor];
 				request.get(urlVendor, function (err, res, body) {
 					if (!err)
-						expect(res.statusCode).to.equal(404);
+					{expect(res.statusCode).to.equal(404);}
 					else
-						mlog.pending(`There error vendor 404 test ${err}`);
+					{mlog.pending(`There error vendor 404 test ${err}`);}
 				});
 			});
 		});
